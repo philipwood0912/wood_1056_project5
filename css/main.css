@@ -1,1 +1,298 @@
+.hidden {
+    display: none;
+}
 
+img, embed, object, video {
+    max-width: 100%;
+}
+
+h2, h3 {
+    color: #fff;
+}
+
+#logo, #desktopNav, #desktopNavFoot, #heroBut {
+    display: none;
+}
+
+#mainHeader {
+    background-color: black;
+    padding: 10px;
+}
+
+#menuBut {
+    width: 50px;
+    height: 50px;
+}
+
+#burgerCon {
+    display: none;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.soc {
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+#mobileLogo {
+    max-width: 400px;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#hero {
+    max-width: 500px;
+    height: 200px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.homeBut {
+    max-width: 500px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#recent {
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.activities {
+    width: 70%;
+    height: 300px;
+    background-color: darkgrey;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#mainFoot {
+    height: 50px;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#backTop {
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+#socialFoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#burgerCon.slideToggle {
+	display: block;
+	overflow: inherit;
+}
+
+#burgerCon {
+    margin-top: 10px;
+}
+
+#mobileNav li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #fff;
+}
+
+#mobileNav li {
+	border-bottom: 1px solid #efefef;
+}
+
+#mobileNav li:first-child {
+	border-top: 1px solid #efefef;
+}
+
+@media screen and (min-width: 641px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 66.5px));
+        grid-gap: 15px;
+        max-width: 964px;
+        margin: 0 auto;
+    }
+    #mainHeader {
+        height: 125px;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 66.5px));
+        grid-template-rows: repeat(2, 52.5px);
+        grid-gap: 15px;
+    }
+    #logo {
+        display: block;
+        background-color: darkgrey;
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    #social {
+        grid-column: 9/-1;
+        justify-content: space-between;
+    }
+    .soc {
+        margin-left: 5px;
+    }
+    #desktopNav {
+        display: block;
+        background-color: darkgrey;
+        grid-column: 5/-1;
+        padding: 6px 5px;
+    }
+    #desktopNav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #desktopNav ul li {
+        flex: 0 1 65px;
+        background-color: grey;
+        text-align: center;
+        padding: 10px 0px;
+        border: 3px solid black;
+    }
+    #desktopNav a {
+        color: #fff;
+    }
+    #mobileLogo {
+        display: none;
+    }
+    #menuBut {
+        display: none;
+    }
+    #backTop {
+        display: none;
+    }
+    #hero {
+        max-width: 964px;
+        margin: 0;
+        height: 400px;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 66.5px));
+        grid-template-rows: repeat(5, 68px);
+        grid-gap: 15px;
+        padding: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+    #hero h2 {
+        grid-column: 3/11;
+    }
+    .heroBack {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .heroNext {
+        grid-column: 11/12;
+        grid-row: 3/4;
+    }
+    .heroBut {
+        width: 50px;
+        height: 50px;
+        background-color: darkgrey;
+    }
+    .homeBut {
+        margin: 0;
+        height: 70px;
+    }
+    .signBut {
+        grid-column: 2/5;
+    }
+    .fundBut {
+        grid-column: 5/9;
+        order: 3;
+    }
+    .gearBut {
+        grid-column: 9/12;
+        order: 4;
+    }
+    #recent {
+        margin: 0;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 69.5px));
+        grid-template-rows: 50px repeat(3, 100px);
+        grid-gap: 10px;
+        padding: 10px;
+        order: 5;
+    }
+    #recent h2 {
+        grid-column: 5/9;
+    }
+    .activities {
+        margin: 0;
+        width: 100%;
+    }
+    .meeting {
+        grid-column: 1/5;
+    }
+    .trout {
+        grid-column: 5/9;
+    }
+    .rod {
+        grid-column: 9/-1;
+    }
+    #mainFoot {
+        margin: 0;
+        grid-column: 1/-1;
+        order: 6;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 66.5px));
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    #desktopNavFoot {
+        display: block;
+        background-color: darkgrey;
+        padding: 6px 5px;
+        grid-column: 1/8;
+    }
+    #desktopNavFoot ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #desktopNavFoot ul li {
+        flex: 0 1 65px;
+        background-color: grey;
+        text-align: center;
+        padding: 10px 0px;
+        border: 3px solid black;
+    }
+    #desktopNavFoot a {
+        color: #fff;
+    }
+    #socialFoot {
+        grid-column: 8/-1;
+        order: 1;
+    }
+
+    
+}
