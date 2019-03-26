@@ -1,1 +1,3 @@
-# wood_1056_project5
+# Responsive Home Page
+## Mobile to Desktop
+### Philip Wood
